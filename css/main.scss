@@ -1,0 +1,91 @@
+@import '../scss/reset'; 
+@font-face {
+    font-family: 'Gilory';
+    src: url(../fonts/Gilroy-Regular.ttf);
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Gilory';
+    src: url(../fonts/Gilroy-Medium.ttf);
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Gilory';
+    src: url(../fonts/Gilroy-Semibold.ttf);
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Gilory';
+    src: url(../fonts/Gilroy-Bold.ttf);
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Galien';
+    src: url(../fonts/Galien-Bold.ttf);
+    font-weight: 700;
+    font-style: normal;
+}
+
+// <Переменные> ============================================================================================================================================
+$fontColor: #1f3f68;
+// </Переменные> ============================================================================================================================================
+
+// <Утилиты> ============================================================================================================================================
+.none {
+    display: none !important;
+}
+.visually-hidden {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    width: 0px;
+    height: 0px;
+    display: block;
+    margin-left: -100000px;
+    background: transparent;
+    font-size: 0;
+}
+.no-scroll {
+    overflow: hidden;
+}
+// </Утилиты> ============================================================================================================================================
+
+// </Повторяшки> ============================================================================================================================================
+
+// </Повторяшки> ============================================================================================================================================
+
+// <Сетка и Базовые> ============================================================================================================================================
+.main {
+    font-family: 'Gilory', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: $fontColor;
+}
+.container {
+    width: 970px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+.container--nav {
+    width: 1230px;
+    padding: 0px 15px;
+    margin: 0 auto;
+}
+.container-left {
+    padding-right: 96px;
+}
+// </Сетка> ============================================================================================================================================
+
+// <Импорт> ============================================================================================================================================
+  
+@import '../scss/repeat';
+@import '../scss/header';
+@import '../scss/we-do';
+@import '../scss/our-project';
+@import '../scss/clients';
+@import '../scss/team';
+@import '../scss/footer';
